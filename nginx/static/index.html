@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>API de Alumnos</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+    input {
+      width: 300px;
+    }
+    button {
+      background-color: #1f8ef1;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0f66c2;
+    }
+    #mensaje {
+      margin-top: 15px;
+      font-style: italic;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      background: #1e1e1e;
+      padding: 8px;
+      margin-bottom: 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📋 API de Alumnos</h1>
+
+  <form id="alumnoForm">
+    <input type="text" id="nombre" placeholder="Nombre del alumno" required />
+    <button type="submit">Agregar</button>
+  </form>
+
+  <p id="mensaje"></p>
+
+  <button id="verAlumnosBtn">Ver alumnos</button>
+  <ul id="listaAlumnos"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
